@@ -16,6 +16,7 @@ body {
 #navbar {
     position: fixed;
     min-width: 290px;
+    text-align: center;
     top: 0px;
     left: 0px;
     width: 300px;
@@ -25,12 +26,14 @@ body {
     background-color: #ffffff;
 }
 
-#navbar a:hover {
+#navbar a {
     text-decoration: none;
+    padding: 10px 30px;
+    color: #4d4e53;
 }
-    
-#navbar a:active {
-    text-decoration: none;
+
+#navbar > header {
+    font-size: 1.5em;
 }
 
 #navbar ul {
@@ -39,4 +42,42 @@ body {
 
 #navbar li {
     color: #4d4e53;
+    font-size: 1em;
+    text-align: left;
+}
+
+#main-doc {
+    margin-left: 320px;
+    margin-right: 20px;
+}
+
+.header{
+    font-size: 25px;
+}
+
+.article {
+    /* word-wrap: break-word; */
+    /* word-wrap: initial; */
+    /* word-break: break-all; */
+
+    word-break: normal;
+    word-wrap: break-word;
+}
+
+.list {
+    margin-left: 40px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
 }
